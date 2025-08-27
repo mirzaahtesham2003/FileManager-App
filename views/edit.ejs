@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/showStyle.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+
+    <div>
+        
+        <div class="innerDiv">
+
+            <a href="/" class="readMore"> Go back.</a>
+
+            <form action="/edit" method="post" id="firstInput-form">
+
+            <div id="inputBoxes-edit">
+
+                <div id="firstInput" class="editInput">
+                    <input type="text" readonly id="mainText" name="previousName" placeholder="<%= fileName %>" value="<%= fileName %>" style="border: 2px solid #222831;">
+                </div>
+                <div id="firstInput" class="editInput">
+                    <input type="text" autocomplete="off" id="mainText" placeholder="New Name..." name="newName" style="border: 2px solid #222831;">
+                </div>
+
+            </div>
+
+            <div id="bttDiv">
+                <div id="insideDiv">
+                    <button id="taskBtt" type="submit">Edit file name</button>
+                </div>
+            </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

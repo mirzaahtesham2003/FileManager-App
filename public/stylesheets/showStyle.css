@@ -1,0 +1,29 @@
+body{
+    background-color: #222831;
+    color: white;
+}
+
+.readMore{
+    text-decoration: none;
+    color: #FFD369;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
+.innerDiv{
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #393E46;
+}
+
+.editInput{
+    margin-bottom: 5px;
+}

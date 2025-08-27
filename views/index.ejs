@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    
+</head>
+<body>
+
+    <form action="/create" method="post" id="firstInput-form">
+
+        <div id="inputBoxes">
+
+            <div id="firstInput">
+                <input type="text" autocomplete="off" id="mainText" placeholder="Title goes here." name="title">
+            </div>
+
+            <div id="secondInput">
+                <textarea id="" autocomplete="off" placeholder="Write your task details here..." name="details"></textarea>
+            </div>
+
+        </div>
+
+        <div id="bttDiv">
+            <div id="insideDiv">
+                <button id="taskBtt" type="submit">Create Task</button>
+            </div>
+        </div>
+
+    </form>
+
+    <% if(files.length > 0) { %>
+        <div id="taskOuterDiv">
+                    <div id="taskInnerDiv">
+        <% files.forEach((ele) => { %>
+
+                        <div class="task">
+                            <p class="taskMsg"> <%= ele %> </p>
+                            <a href="/Files/<%=ele %>" class="readMore"> Read More</a>
+                            <a href="/edit/<%=ele %>" class="readMore" id="editBtt"> edit file name</a>
+                        </div>
+        <% }) %>
+                    </div>
+        </div>
+    <% } else { %>
+            <div id="taskOuterDiv">
+                <div id="taskInnerDiv">
+                    <p id="noTaskText">No tasks yet...!</p>
+                </div>
+            </div>
+        <% } %>
+
+
+</body>
+</html>

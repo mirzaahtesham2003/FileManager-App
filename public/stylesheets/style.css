@@ -1,0 +1,126 @@
+body{
+    background-color: #222831;
+    color: white;
+}
+
+#inputBoxes{
+    width: 100%;
+}
+
+textarea{
+    resize: none;
+    color: #EEEEEE;
+    background-color: #393E46;
+    border: none;
+    width: 93%;
+    border-radius: 5px;
+    height: 4rem;
+    box-sizing: border-box;
+    padding: 10px 0 0 15px;
+}
+
+textarea::placeholder {
+  color: #EEEEEE;   
+  opacity: 0.6;
+}
+
+#mainText{
+    color: #EEEEEE;
+    background-color: #393E46;
+    border: none;
+    width: 93%;
+    border-radius: 4px;
+    height: 2rem;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+#mainText::placeholder {
+    color: #EEEEEE; 
+    opacity: 0.6;
+}
+
+#firstInput-form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 35px 0 5px 0;
+}
+
+#firstInput{
+    display: flex;
+    justify-content: center;
+}
+
+#secondInput{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#bttDiv{
+    display: flex;
+    justify-content: center;
+}
+#insideDiv{
+    margin-top: 10px;
+    width: 93%;
+}
+#taskBtt{
+    border-radius: 6px;
+    height: 2.2rem;
+    background-color: #FFD369;
+}
+
+.task{
+    /* display: none; */
+    background-color: #393E46;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 15rem;
+    height: 5rem;
+    padding: 8px 0 0 8px;
+    margin: 15px 15px 0 0;
+
+}
+
+.taskMsg{
+    font-size:x-large;
+    margin: 0;
+    color: #EEEEEE;
+}
+
+.readMore{
+    text-decoration: none;
+    color: rgb(23, 23, 177);
+    position: relative;
+    top: 15px;
+    color: #FFD369;
+}
+
+#taskOuterDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+#taskInnerDiv{
+    width: 93%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#noTaskText{
+    padding-left: 8px;
+}
+
+#editBtt{
+    position: relative;
+    left: 60px;
+    color: #1D24CA;   
+    /* opacity: 0.6; */
+}
+
+#inputBoxes-edit{
+    display: flex;
+    flex-direction: column;
+}
